@@ -164,24 +164,9 @@ Change things like number of epochs, checkpoint paths, or augmentation strength 
 
 ---
 
-## ✍️ Author
 
-* Suvansh – Engineering Student, IIT
 
----
 
-## ✅ Future Ideas
-
-* Add `parameter` lane format (polynomial fitting)
-* Support CULane / BDD100K datasets
-* Beam search instead of greedy decoding
-* Convert to real-time lane assistant demo
-
----
-
-## 📜 License
-
-Free to use for research and learning. Please credit the author if used.
 
 ```
 
