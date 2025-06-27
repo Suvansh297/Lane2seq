@@ -1,6 +1,4 @@
-Perfect, Suvansh! Here’s a clean and **beginner-friendly README** that explains your project **in simple terms**, includes everything you've done, what tools/libraries you used, and how someone can run it. I’ve also left a spot to include your **result image**.
 
----
 
 ```markdown
 # 🛣️ Lane2Seq – Lane Detection Using Transformers
@@ -63,7 +61,8 @@ lane2seq\_project/
 
 ## 🖼️ Example Results
 
-_(Add your inference result image here)_
+![clips_0530_1492626153155598528_0_20](https://github.com/user-attachments/assets/4005c0e5-1daf-46c6-ac5a-f2c9c7582057)
+
 
 ![Lane Prediction Example](path/to/your/image.png)
 
