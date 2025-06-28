@@ -34,7 +34,6 @@ This project is based on the [TuSimple lane detection dataset](https://github.co
 
 ## 📦 Folder Structure
 
-```
 
 lane2seq\_project/
 ├── configs/           # YAML configuration
@@ -46,7 +45,7 @@ lane2seq\_project/
 ├── evaluation.py      # Evaluate model output
 ├── test\_tokenizer.py  # Visual test for tokenizer
 
-````
+
 
 ---
 
@@ -61,7 +60,8 @@ lane2seq\_project/
 
 ## 🖼️ Example Results
 
-![clips_0530_1492626153155598528_0_20](https://github.com/user-attachments/assets/4005c0e5-1daf-46c6-ac5a-f2c9c7582057)
+![clips_0530_1492626153155598528_0_20](https://github.com/user-attachments/assets/406aae32-d74f-4d7f-8e6c-af3c7d15139c)
+
 
 
 ![Lane Prediction Example](path/to/your/image.png)
@@ -75,13 +75,13 @@ lane2seq\_project/
 ```bash
 git clone https://github.com/yourusername/lane2seq_project.git
 cd lane2seq_project
-````
+
 
 ### 2. Install Requirements
 
 ```bash
 pip install -r requirements.txt
-```
+
 
 You’ll need `torch`, `transformers`, `opencv-python`, `Pillow`, `safetensors`, etc.
 
@@ -89,7 +89,7 @@ You’ll need `torch`, `transformers`, `opencv-python`, `Pillow`, `safetensors`,
 
 Download the [TuSimple dataset](https://github.com/TuSimple/tusimple-benchmark/issues/3) and place it like this:
 
-```
+
 archive/TUSimple/
 ├── train_set/
 │   ├── clips/
@@ -97,13 +97,13 @@ archive/TUSimple/
 ├── test_set/
 │   ├── clips/
 │   └── test_label.json
-```
+
 
 ### 4. Train the Model
 
 ```bash
 python train1.py
-```
+
 
 * Best model saved to: `checkpoints/best_model.pth`
 * Logs are stored in `logs/train.log`
@@ -112,7 +112,7 @@ python train1.py
 
 ```bash
 python inference.py
-```
+
 
 * Outputs: `results/inference/*.json` (lane data) and `*.png` (visual images)
 
@@ -120,7 +120,7 @@ python inference.py
 
 ```bash
 python evaluation.py
-```
+
 
 * Outputs precision, recall, F1 score
 * Saves results in `results/inference/evaluation_results.json`
@@ -129,7 +129,7 @@ python evaluation.py
 
 ```bash
 python test_tokenizer.py
-```
+
 
 * Saves side-by-side visualizations of decoded vs original lanes
 * Output in `test_outputs_anchor/`
@@ -140,9 +140,9 @@ python test_tokenizer.py
 
 All settings (image size, vocab size, paths, augmentation, etc.) are in:
 
-```
+
 configs/config.yaml
-```
+
 
 Change things like number of epochs, checkpoint paths, or augmentation strength from there.
 
@@ -164,17 +164,3 @@ Change things like number of epochs, checkpoint paths, or augmentation strength 
 ---
 
 
-
-
-
-```
-
----
-
-Let me know if you’d like:
-- A downloadable `README.md` file
-- A `requirements.txt` file to go with it
-- Help adding your result image and formatting it
-
-I'm happy to polish it further for release on GitHub or sharing with others!
-```
