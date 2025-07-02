@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # 🛣️ Lane2Seq – Lane Detection Using Transformers
 
 Lane2Seq is a deep learning project that detects **lane lines in road images** using a special kind of model called a **transformer**. Instead of detecting lanes as pixel maps, this model **predicts a sequence of tokens** (like how language models predict text) to represent lane positions.
@@ -72,14 +72,14 @@ lane2seq\_project/
 
 ### 1. Clone the Repo
 
-```bash
+
 git clone https://github.com/yourusername/lane2seq_project.git
 cd lane2seq_project
 
 
 ### 2. Install Requirements
 
-```bash
+
 pip install -r requirements.txt
 
 
@@ -89,7 +89,7 @@ You’ll need `torch`, `transformers`, `opencv-python`, `Pillow`, `safetensors`,
 
 Download the [TuSimple dataset](https://github.com/TuSimple/tusimple-benchmark/issues/3) and place it like this:
 
-
+```
 archive/TUSimple/
 ├── train_set/
 │   ├── clips/
@@ -98,10 +98,10 @@ archive/TUSimple/
 │   ├── clips/
 │   └── test_label.json
 
-
+```
 ### 4. Train the Model
 
-```bash
+
 python train1.py
 
 
@@ -110,7 +110,7 @@ python train1.py
 
 ### 5. Run Inference
 
-```bash
+
 python inference.py
 
 
@@ -118,7 +118,7 @@ python inference.py
 
 ### 6. Evaluate the Model
 
-```bash
+
 python evaluation.py
 
 
@@ -127,7 +127,7 @@ python evaluation.py
 
 ### 7. Debug the Tokenizer (Optional)
 
-```bash
+
 python test_tokenizer.py
 
 
