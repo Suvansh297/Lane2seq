@@ -64,7 +64,6 @@ lane2seq\_project/
 
 
 
-![Lane Prediction Example](path/to/your/image.png)
 
 ---
 
@@ -72,16 +71,16 @@ lane2seq\_project/
 
 ### 1. Clone the Repo
 
-
+```
 git clone https://github.com/yourusername/lane2seq_project.git
 cd lane2seq_project
-
+```
 
 ### 2. Install Requirements
 
-
+```
 pip install -r requirements.txt
-
+```
 
 You’ll need `torch`, `transformers`, `opencv-python`, `Pillow`, `safetensors`, etc.
 
@@ -101,35 +100,35 @@ archive/TUSimple/
 ```
 ### 4. Train the Model
 
-
+```
 python train1.py
-
+```
 
 * Best model saved to: `checkpoints/best_model.pth`
 * Logs are stored in `logs/train.log`
 
 ### 5. Run Inference
 
-
+```
 python inference.py
-
+```
 
 * Outputs: `results/inference/*.json` (lane data) and `*.png` (visual images)
 
 ### 6. Evaluate the Model
 
-
+```
 python evaluation.py
-
+```
 
 * Outputs precision, recall, F1 score
 * Saves results in `results/inference/evaluation_results.json`
 
 ### 7. Debug the Tokenizer (Optional)
 
-
+```
 python test_tokenizer.py
-
+```
 
 * Saves side-by-side visualizations of decoded vs original lanes
 * Output in `test_outputs_anchor/`
@@ -140,9 +139,9 @@ python test_tokenizer.py
 
 All settings (image size, vocab size, paths, augmentation, etc.) are in:
 
-
+```
 configs/config.yaml
-
+```
 
 Change things like number of epochs, checkpoint paths, or augmentation strength from there.
 
