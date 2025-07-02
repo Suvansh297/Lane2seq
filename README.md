@@ -34,7 +34,7 @@ This project is based on the [TuSimple lane detection dataset](https://github.co
 
 ## 📦 Folder Structure
 
-
+```
 lane2seq\_project/
 ├── configs/           # YAML configuration
 ├── models/            # Encoder (ViT) + Decoder
@@ -45,7 +45,7 @@ lane2seq\_project/
 ├── evaluation.py      # Evaluate model output
 ├── test\_tokenizer.py  # Visual test for tokenizer
 
-
+```
 
 ---
 
